@@ -1,0 +1,259 @@
+@import url(https://fonts.googleapis.com/css?family=Catamaran:400,200,700);
+@import url(https://fonts.googleapis.com/css?family=Josefin+Sans:400,700);
+@font-face {
+    font-family: 'bangna_newregular';
+    src: url('../fonts/bangna-new-webfont.eot');
+    src: url('../fonts/bangna-new-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/bangna-new-webfont.woff2') format('woff2'),
+         url('../fonts/bangna-new-webfont.woff') format('woff'),
+         url('../fonts/bangna-new-webfont.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+html, body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    background: url("../img/bg.jpg");
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    background-attachment: fixed;
+    background-size: cover;
+    font-size: 16px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    resize: vertical;
+}
+#main{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    color: white;
+}
+form{ margin-top: 5%; }
+#logo{ padding: 2%; }
+#main h1{
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+#quote_tweet {
+  border: none;
+  padding: 0.5em 10px;
+  quotes: "\201C""\201D""\2018""\2019";
+  margin-bottom: -10px;
+  text-align: center;
+}
+#quote_tweet:before{
+  color: #ccc;
+  content: open-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-right: 0.25em;
+  vertical-align: -0.4em;
+}
+
+#quote_tweet:after{
+  color: #ccc;
+  content: close-quote;
+  font-size: 4em;
+  line-height: 0.1em;
+  margin-left: 0.25em;
+  vertical-align: -0.4em;
+}
+
+#user{
+    color: #888;
+}
+
+#user a{
+    color: #888;
+    text-decoration: none;
+}
+
+#user a:hover{
+    color: #AAA;
+    text-decoration: underline;
+}
+
+.desc{ font-family: 'bangna_newregular'; }
+
+a{
+    color: white;
+    text-decoration: underline;
+}
+a:hover{
+    color: #AAA;
+    text-decoration: none;
+}
+
+/* Clock Style */
+.clock{
+    font-size: 4em;
+    margin-top: 10px;
+}
+.digits{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 200;
+}
+.caption {
+    display: block;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+.date {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 20%;
+    min-width: 70px;
+}
+.colon{
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 10px;
+}
+
+/* Contact Style */
+.contact{
+    margin-top: 50px;
+    margin-bottom: 20px;
+}
+
+/* Share social css */
+ul a{ text-decoration: none; }
+ul a:hover{ text-decoration: none; }
+li{
+    opacity: 0.5;
+}
+li:hover{
+    opacity: 1;
+}
+li.head{
+    opacity: 1;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media screen and (max-device-width: 600px) {
+    ul{
+        list-style:none;
+        padding: 0;
+    }
+    li{ display: inline-block; }
+    li img{ width: 40px !important; }
+}
+
+@media screen and (min-device-width: 600px) {
+    ul{
+        list-style:none;
+        position: fixed;
+        left: 0;
+        padding-left: 0;
+        margin-top: -150px;
+        top: 50%;
+    }
+    li img{ width: 50px; }
+}
+
+input[type="email"] {
+  padding: 10px;
+  border: none;
+  background: rgba(0, 0, 0, 0);
+  border-bottom: solid 2px #777;
+  transition: border 0.3s;
+}
+input[type="email"]:focus,
+input[type="email"].focus {
+    outline: none;
+    border-bottom: solid 2px #FFF;
+    background: rgba(0, 0, 0, 0);
+}
+
+button[type="submit"]{
+    background-color: rgba(66, 165, 245, 0.5);
+    border: none;
+    border-radius: 0;
+}
+
+button[type="submit"]:hover{
+    background-color: rgba(30, 136, 229, 1);
+}
+
+/* FB Page css */
+@media screen and (max-device-width: 600px) {
+    .box{
+        position: absolute;
+        left: 50%;
+        margin-left: -40px;
+        width:80px;
+        height:80px;
+        background: url('../img/profile.jpg');
+        background-size: cover;
+        display:block;
+        text-decoration:none;
+        margin-bottom: 20px;
+    }
+    #titlepge{ display: none; }
+    #triangle-down { display: none; }
+    .gotopage{ display: none; }
+}
+
+@media screen and (min-device-width: 600px) {
+    .fb-share{
+        position: fixed;
+        bottom: 10px;
+        right: 10px;
+        font-size: 8pt;
+        padding: 0;
+    }
+
+    #wrap{
+        width: 80px;
+        height: 120px;
+        overflow:hidden;
+        position:relative;
+    }
+    #titlepge{
+        background: #111;
+        color: #fff;
+        display: block;
+        width: 80px;
+        padding: 3px 10px;
+        position: relative;
+        top: -46px;
+        text-align: center;
+        border-radius: 5px;
+    }
+    .box{
+        width:80px;
+        height:80px;
+        background: url('../img/profile.jpg');
+        background-size: cover;
+        position:absolute;
+        top:40px;
+        left:0px;
+        display:block;
+        text-decoration:none;
+    }
+    .gotopage{
+        background: url('../img/02_facebook.png');
+        background-size: cover;
+        color:#fff;
+        opacity:0;
+        transition:all .5s;
+    }
+    .gotopage:hover{
+        opacity:.9;
+    }
+    #triangle-down {
+        width: 14px;
+        height: 14px;
+        background: #111;
+        transform: rotate(45deg);
+        position: relative;
+        left: 50px;
+        top: -21px;
+    }
+}

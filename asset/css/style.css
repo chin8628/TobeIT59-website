@@ -1,0 +1,302 @@
+@import url(https://fonts.googleapis.com/css?family=Kanit:500,300,200&subset=thai,latin);
+
+html, body{
+    width: 100%;
+    height: 100%;
+    font-size: 16px;
+    color: white;
+    background: #222;
+    font-family: 'Kanit', sans-serif;
+    font-weight: 300;
+}
+
+a{
+    color: #71A6D4;
+}
+
+a:hover{
+    color: #337ab7;
+}
+
+b{
+    font-weight: 500;
+    letter-spacing: 1.2px;
+}
+
+hr{
+    height: 1px;
+    background: white;
+    border: 0;
+}
+
+hr.thin{
+    height: 1px;
+    background: #666;
+    border: 0;
+}
+
+.block{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-position: center bottom;
+    background-size: cover;
+    margin: 0;
+}
+
+.block-header{
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-position: center bottom;
+    background-size: cover;
+    margin: 0;
+    margin-top: 10px;
+}
+
+.box-index{
+    border: 1px;
+    font-size: 1.8em;
+    margin: 0;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+#tobe{
+    padding-right: 20px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    width: 200px;
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+#it{
+    padding-right: 10px;
+    color: #312D2D;
+    background: rgba(230, 230, 230, 0.51);
+    width: 130px;
+    margin-left: 130px;
+    text-align: right;
+    margin-bottom: 5px;
+    font-size: 1.3em;
+}
+
+#kmitl{
+    padding-left: 10px;
+    padding-bottom: 5px;
+    color: white;
+    background: rgba(0, 0, 0, 0.3);
+    width: 250px;
+    text-align: left;
+    margin-left: 30px;
+    font-size: 1.3em;
+}
+
+/* Clock Style */
+.clock{
+    font-size: 180%;
+    color: white;
+    text-shadow: 0 3px 10px black;
+}
+.digits{
+    font-family: 'Catamaran', sans-serif;
+    font-weight: 200;
+}
+.caption {
+    display: block;
+    font-size: 1rem;
+    margin-top: -10px;
+}
+.date {
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 20%;
+    min-width: 70px;
+}
+.colon{
+    display: inline-block;
+    text-align: center;
+    vertical-align: top;
+    width: 10px;
+}
+
+.head-label{
+    background: rgba(0, 0, 0, 0.5);
+    color: #CCC;
+    padding: 15px;
+    display:inline-block;
+    text-align: center;
+}
+
+.head-label span{
+    color: #673ab7;
+}
+
+.head-article{
+    background-position: center bottom;
+    background-size: cover;
+}
+
+article{
+    border: solid 2px #666;
+    padding: 15px;
+    background: rgba(0, 0, 0, 0.2)
+}
+
+#tweet{
+    height: 100px;
+}
+
+.twitter{
+    text-align: center;
+    margin-top: 30px;
+}
+
+.box-text{
+    margin: 10px;
+}
+
+.box-text p{
+    padding: 5px;
+    border: solid 1px white;
+    display:inline-block;
+}
+
+.transport-box{
+    background: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    color: #333;
+}
+
+.middle-page{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.center-page{
+    display: flex;
+    justify-content: center;
+}
+
+article.faq{
+    background: rgba(0, 0, 0, 0.1);
+    padding-left: 50px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    border: solid 1px #DDD;
+}
+
+.question:before{
+    content: "Q : ";
+}
+
+.question{
+    color: #ff8f00;
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+
+.answer:before{
+    content: "A : ";
+}
+
+.answer{
+    color: #8DFF02;
+    font-weight: 200;
+}
+
+.navbar{
+    background: rgba(0, 0, 0, 0.4);
+    border: 0;
+    text-align: center;
+}
+
+.navbar-toggle {
+    float: none;
+    margin-right: 0;
+}
+
+.navbar-default .navbar-nav > li > a:hover{
+    color: white;
+    text-decoration: underline;
+}
+
+.course-slide{
+    padding: 0;
+}
+
+.slide-control{
+    text-align: center;
+}
+
+.slide-control ul{
+    padding: 0;
+}
+
+.slide-control li{
+    text-align: center;
+    display: inline-block;
+    margin: 10px;
+}
+
+.slide-control li img{
+    height: 80px;
+    width: 80px;
+    padding: 10px;
+    background: #888;
+    cursor:pointer;
+}
+
+.slide-control li img:hover{
+    border: solid 2px #DDD;
+}
+
+.slide-subject-desc{
+    z-index: 10;
+    color: #fff;
+    border: solid 1px white;
+    min-height: 150px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-top: 20px;
+}
+
+.slide-subject-teacher{
+    z-index: 10;
+    color: #fff;
+    border: solid 1px white;
+    min-height: 150px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.slide-subject-sheet{
+    z-index: 10;
+    color: #fff;
+    border: solid 1px white;
+    min-height: 150px;
+    background: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+#carousel-gallery img{
+    width: 900px;
+}
+
+.slide-subject-desc p:first-child{
+    font-weight: 500px;
+    font-size: 1.2em;
+    color: #ffd54f;
+}
+
+.slide-subject-teacher p:first-child{
+    font-weight: 500px;
+    font-size: 1.2em;
+    color: #ffd54f;
+}
